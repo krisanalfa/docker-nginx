@@ -11,6 +11,9 @@ RUN echo "Acquire::http { Proxy \"http://192.168.1.10:3142\"; };" > /etc/apt/apt
 
 COPY root/ /
 
+RUN usermod -u 1001 www-data && \
+    groupmod -g 1002 www-data
+
 EXPOSE 80
 
 CMD ["nginx"]
