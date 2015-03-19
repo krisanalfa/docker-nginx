@@ -1,0 +1,14 @@
+{
+    "name": "krisanalfa/docker-nginx",
+    "profile": "docker",
+
+    "docker": {
+        "containers": {
+            "root": {
+                "ports": [
+                    "80:80"
+                ]
+            }
+        }
+    }
+}
